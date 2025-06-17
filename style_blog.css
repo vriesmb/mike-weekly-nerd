@@ -53,6 +53,8 @@ html {
     --color-card-background: #f4f3f3;
     --color-card-button-background: #67ffd4;
     --card-title-color: #1d1d1f;
+    --color-highlighted-card-text: #d1ffd9;
+    --color-highlighted-card-bg: #1d2b2187;
     
 }
 
@@ -71,6 +73,8 @@ html {
     --color-card-background: #202121;
     --color-card-button-background: #7b7b7b;
     --card-title-color: #fefefe;
+    --color-highlighted-card-text: #202121;
+    --color-highlighted-card-bg: #00ffb3;
 
 
 
@@ -272,13 +276,13 @@ header {
 
 .projects-card-wrapper section:first-of-type,
 .blog-cards-wrapper section:first-of-type {
-    background-color: var(--color-primary);
+    background-color: var(--color-highlighted-card-bg);
 
     display: flex;
             
     & h2 {
         font-size: 3em;
-        color: var(--color-text-light);
+        color: var(--color-highlighted-card-text);
             } 
 }
 
