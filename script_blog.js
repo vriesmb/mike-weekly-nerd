@@ -53,7 +53,7 @@ function initAccordion() {
 async function navigateToPost(button) {
     const blogItem = button.closest('[data-blog-item]');
     const targetUrl = blogItem.getAttribute('data-blog-item');
-    const fullUrl = `/blog-posts/${targetUrl}.html`;
+    const fullUrl = `./blog-posts/${targetUrl}.html`;
 
     try {
         // Simuleer navigatie + animatie indien mogelijk
