@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style_posts.css">
+    <link rel="stylesheet" href="/style_blog.css">
+    <title>Twitter Follow Bot - Steve Jonk</title>
+</head>
+<body>
+    <header style="position:sticky; top:0; z-index:1000;">
+        <ul>
+            <li>
+                <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+                    <path
+                        class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+                        d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+                    />
+                </svg>
+            </li>
+            <li>
+                <a href="../index.html">Projecten</a>
+            </li>
+            <li>
+                <a style="text-decoration: underline;" href="">Steve Jonk</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+        <article>
+            <section>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKOj6Ill2zfpb1mtEzC1_eXbI5EctOxdQcA&s" alt="Twitter follow bot illustratie">
+                <div>
+                    <h1>Twitter Follow Bot & Follower Scraper</h1>
+                    <p>Een project van Steve Jonk over het bouwen van een geautomatiseerde bot die Twitter-gebruikers volgt en analyseert – en dat alles ondanks de vele obstakels van het platform.</p>
+                    <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+                        &#9733; &#9733; &#9733; <span style="color:#ccc">&#9733;</span> <span style="color:#ccc">&#9733;</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <details class="accordion">
+                    <summary>
+                        <h2>Introductie</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Steve Jonk begon met een eenvoudig idee: “Ik wil een Twitter bot die alle volgers van een ander account volgt.” Maar de praktijk bleek weerbarstig. De Twitter API was zwaar beperkt, en automatisch volgen is tegen hun regels. In plaats van op te geven, besloot Steve het slim aan te pakken — via een geautomatiseerde browser.
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Tools & Tech Stack</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        <ul>
+                            <li><strong>N8N</strong> – Voor workflow-automatisering en visuele controle</li>
+                            <li><strong>Puppeteer</strong> – Om een browser te simuleren</li>
+                            <li><strong>PostgreSQL</strong> – Om gebruikersdata op te slaan</li>
+                            <li><strong>Docker + Ubuntu</strong> – Voor een stabiele hosting</li>
+                            <li><strong>Twitter API</strong> – Alleen minimaal gebruikt voor authenticatie</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Voorbeelden & Obstakels</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Steve programmeerde een bot die:
+                        <ul>
+                            <li>Automatisch Twitter-profielen opende via Puppeteer</li>
+                            <li>Scroll- en klikgedrag simuleerde om ‘menselijk’ over te komen</li>
+                            <li>Volgers in een database opsloeg, en die later willekeurig volgde</li>
+                        </ul>
+                        <br>
+                        Enkele slimme oplossingen:
+                        <br><br>
+                        <strong>Twitter API was beperkt:</strong><br>
+                        In plaats van API-calls koos Steve voor frontend scraping met een ingelogde sessie.
+                        <br><br>
+                        <strong>Twitter blokkeert botgedrag:</strong><br>
+                        Door random delays, realistische muisbewegingen en login via sessiecookies werd het gedrag nauwelijks herkend als bot.
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Wat je hier zelf mee kunt</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Zulke technieken zijn niet alleen handig voor Twitter. Hetzelfde principe kun je toepassen bij:
+                        <ul>
+                            <li>LinkedIn connectie-verzoeken (voorzichtig!)</li>
+                            <li>Instagram scraping / volgersanalyse</li>
+                            <li>Automatisch liken of reageren (mits ethisch ingezet)</li>
+                        </ul>
+                        Of simpelweg: processen automatiseren waar een API je in de steek laat.
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Reflectie</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Dit project heeft me vooral één ding geleerd: tools zijn beperkt, maar jij hoeft dat niet te zijn. Steve liet zien dat je met een creatieve mindset alsnog kunt bouwen wat je wilt, ook als platforms je beperken. Zelf ben ik hierdoor anders gaan kijken naar tools als Puppeteer — niet alleen voor testing, maar als volwaardige automation-oplossing. En N8N als controller is iets dat ik tof vind en evt ga gebruiken in de toekomst.  
+                        <br><br>
+                        De les? Denk niet “kan niet”, maar: “hoe dan wél?”
+                    </div>
+                </details>
+            </section>
+        </article>
+    </div>
+
+    <script src="../script_blog.js"></script>
+</body>
+</html>

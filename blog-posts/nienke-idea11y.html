@@ -1,74 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../style_posts.css" />
+  <link rel="stylesheet" href="/style_blog.css" />
+  <title>Importance of Accessibility – Nienke</title>
 </head>
 <body>
-    <div class="container">
-        <article>
-            <header>
-                <img src="https://imgs.search.brave.com/TpRyH8R-qQq_sr-i4R9FwvqEYbWPdGvf5BlBCcsjtSc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/a2xvb2suY29tL2lt/YWdlcy9mbF9sb3Nz/eS5wcm9ncmVzc2l2/ZSxxXzY1L2NfZmls/bCx3XzEyOTUsaF84/NjMvd184MCx4XzE1/LHlfMTUsZ19zb3V0/aF93ZXN0LGxfS2xv/b2tfd2F0ZXJfYnJf/dHJhbnNfeWhjbWgz/L2FjdGl2aXRpZXMv/ZXV2cnJ2aGVkemQ1/ZjNscXZteWkvQW1z/dGVyZGFtUHVibGlj/VHJhbnNwb3J0MS03/RGF5VGlja2V0Lmpw/Zw" 
-                     alt="Design Principles">
-                <div>
-                    <h1>Importance of Accessibility</h1>
-                    <p>Een verhaal door Nienke over haar ervaring en onderzoek naar de toegankelijkheid van de OV GVB app.</p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 4/5</time>
-                </div>
-            </header>
+  <header style="position:sticky; top:0; z-index:1000;">
+    <ul>
+      <li>
+        <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+          <path
+            class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+            d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+          />
+        </svg>
+      </li>
+      <li>
+        <a href="../index.html">Projecten</a>
+      </li>
+      <li>
+        <a style="text-decoration: underline;" href="">Nienke</a>
+      </li>
+    </ul>
+  </header>
 
-            <section>
-                <details>
-                    <summary>
-                        <h2>Notities</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Importance of Accessibility</h2>  
-                        <ul>  
-                            <li>Everyone deserves a nice experience.</li>  
-                            <li>Interviews, testing, personal approach.</li>  
-                        </ul>  
+  <div class="container">
+    <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+    <article>
+      <section>
+        <img src="https://imgs.search.brave.com/TpRyH8R-qQq_sr-i4R9FwvqEYbWPdGvf5BlBCcsjtSc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9yZXMu/a2xvb2suY29tL2lt/YWdlcy9mbF9sb3Nz/eS5wcm9ncmVzc2l2/ZSxxXzY1L2NfZmls/bCx3XzEyOTUsaF84/NjMvd184MCx4XzE1/LHlfMTUsZ19zb3V0/aF93ZXN0LGxfS2xv/b2tfd2F0ZXJfYnJf/dHJhbnNfeWhjbWgz/L2FjdGl2aXRpZXMv/ZXV2cnJ2aGVkemQ1/ZjNscXZteWkvQW1z/dGVyZGFtUHVibGlj/VHJhbnNwb3J0MS03/RGF5VGlja2V0Lmpw/Zw"
+             alt="Design Principles" />
+        <div>
+          <h1>Importance of Accessibility</h1>
+          <p>Nienke vertelt over haar onderzoek naar toegankelijkheid binnen de OV GVB app en hoe iedereen recht heeft op een fijne digitale ervaring.</p>
+          <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+            &#9733; &#9733; &#9733; <span style="color:#ccc">&#9733;</span> <span style="color:#ccc">&#9733;</span>
+          </div>
+        </div>
+      </section>
 
-                        <h2>Who am I making it for</h2>  
-                        <ul>  
-                            <li>Think outside the box</li>  
-                            <li>Challenges in research</li>  
-                            <li>A small group</li>  
-                            <li>Too specific or technical</li>  
-                            <li>Testing and prototyping</li>  
-                            <li>Make innovative solutions</li>  
-                            <li>Think about the people who are left behind, what can get them up to speed. How can I help.</li>  
-                        </ul>  
+      <section>
+        <details class="accordion">
+          <summary>
+            <h2>Wat is toegankelijkheid?</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            Toegankelijkheid betekent dat iedereen, ongeacht beperking, een product kan gebruiken. Het draait niet alleen om visueel design, maar om bruikbaarheid voor iedereen.
+          </div>
+        </details>
 
-                        <h2>Methods of research</h2>  
-                        <ul>  
-                            <li>Talking to people who have the problems</li>  
-                            <li>The people working WITH them</li>  
-                            <li>People working in the field</li>  
-                        </ul>  
-                    </div>
-                </details>
+        <details class="accordion">
+          <summary>
+            <h2>Onderzoeksmethoden</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li>Interviews met mensen die daadwerkelijk last hebben van ontoegankelijke apps</li>
+              <li>Gebruikstests uitgevoerd met visuele en motorische beperkingen in gedachten</li>
+              <li>Prototypes getest en verbeterd aan de hand van feedback</li>
+            </ul>
+          </div>
+        </details>
 
-                <details open>
-                    <summary>
-                        <h2>Persoonlijke opvatting</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Ze vertelde trots over haar onderzoek.</h2>  
-                        Gaaf voor haar dat ze een grote verandering heeft kunnen doorvoeren in de GVB organistatie. Toegankelijkheid is belangrijk en ze kan het zo mooi bijsturen. Ik heb er uit meegenomen dat je altijd alles moet testen met allerlei doelgroep.. ook degene waarvan je al denkt te weten wat de uitkomst is.
-                    </div>
-                </details>
-            </section>
-        </article>
-    </div>
+        <details class="accordion">
+          <summary>
+            <h2>Voor wie maak je dit?</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Ik wilde buiten de standaarddoelgroep denken. Niet alleen voor de massa, maar juist voor mensen die nu vaak worden vergeten.</p>
+            <ul>
+              <li>Ouderen zonder technische kennis</li>
+              <li>Mensen met visuele beperkingen</li>
+              <li>Personen met motorische uitdagingen</li>
+            </ul>
+            <p>Hoe krijgen we hen op gelijke hoogte? Wat kunnen we doen om hen te helpen?</p>
+          </div>
+        </details>
 
+        <details class="accordion">
+          <summary>
+            <h2>Veelvoorkomende problemen in GVB app</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li>Tekstcontrast is vaak te laag voor slechtzienden</li>
+              <li>Knoppen zijn klein en liggen dicht bij elkaar, moeilijk voor mensen met trillende handen</li>
+              <li>Geen ondersteuning voor schermlezers of duidelijke structuur in de content</li>
+              <li>Belangrijke informatie (zoals vertragingen) wordt niet visueel én auditief aangeboden</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Innovatieve oplossingen</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li>Duidelijke focusstatussen voor toetsenbordgebruikers</li>
+              <li>Toegankelijke kleurenschema’s met toggle mogelijkheid</li>
+              <li>Audiofeedback voor knoppen</li>
+              <li>Alternatieve navigatie via spraakcommando’s</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Persoonlijke reflectie</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Toegankelijkheid is meer dan techniek – het is empathie. Door dit project realiseerde ik me dat kleine aanpassingen een wereld van verschil maken.</p>
+            <p>Ik hoop dat meer ontwerpers niet alleen denken aan esthetiek, maar aan mensen. Digitale inclusie moet de standaard worden, geen uitzondering.</p>
+          </div>
+        </details>
+      </section>
+    </article>
+  </div>
+
+  <script src="../script_blog.js"></script>
 </body>
 </html>

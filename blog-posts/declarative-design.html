@@ -1,143 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../style_posts.css" />
+  <link rel="stylesheet" href="/style_blog.css" />
+  <title>Weekly Nerd – Declarative Design door Jeremy Keith</title>
 </head>
 <body>
-    <div class="container">
-        <article>
-            <header>
-                <img src="https://imgs.search.brave.com/Q27d5BcpfT_PNCHs-vFTxqaXomIKRsjSTePXMenNffU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2UwL0plcmVteV9L/ZWl0aF9pbl8yMDE5/LmpwZw" 
-                     alt="Design Principles">
-                <div>
-                    <h1>Declarative Design</h1>
-                    <p>Een verhaal door Jeremy Keith over design principes en technieken.</p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 4/5</time>
-                </div>
-            </header>
+  <header style="position:sticky; top:0; z-index:1000;">
+    <ul>
+      <li>
+        <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+          <path
+            class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+            d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+          />
+        </svg>
+      </li>
+      <li><a href="../index.html">Projecten</a></li>
+      <li><a style="text-decoration: underline;" href="">J. Keith</a></li>
+    </ul>
+  </header>
 
-            <section>
-                <details>
-                    <summary>
-                        <h2>Declarative Design & Web Thinking: Insights from Jeremy Keith</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <article>  
-                          
-                            <h3>Declarative vs. Imperative: A Musical Lens</h3>  
-                            <p>  
-                              Design philosophies mirror musical approaches:  
-                            </p>  
-                            <ul>  
-                              <li><strong>Classical music</strong> relies on precise sheet music with strict instructions.</li>  
-                              <li><strong>Jazz</strong> thrives on improvisation and minimal rules.</li>  
-                            </ul>  
-                          
-                            <h3>Programming Paradigms</h3>  
-                            <h4>Imperative (JavaScript)</h4>  
-                            <ul>  
-                              <li>Step-by-step control (e.g., <code>create > loop > test > return</code>).</li>  
-                              <li>Fragile: One error breaks the entire flow.</li>  
-                            </ul>  
-                          
-                            <h4>Declarative (HTML/CSS)</h4>  
-                            <ul>  
-                              <li>Describe outcomes, not steps (e.g., <code>font-size: clamp(...)</code>).</li>  
-                              <li>Fault-tolerant: Errors are skipped, not displayed.</li>  
-                            </ul>  
-                            <blockquote>  
-                              <p>“JavaScript should only do what only JavaScript can do.”</p>  
-                            </blockquote>  
-                          
-                            <h3>Modern CSS Techniques</h3>  
-                            <pre><code>font-size: clamp(1rem, 0.5rem + 0.666vw, 1.5rem);</code></pre>  
-                            <ul>  
-                              <li>Use <code>calc()</code>, <code>min()</code>, and <code>max()</code> for fluid spacing.</li>  
-                              <li>Leverage <code>fit-content()</code> and <code>minmax()</code> for grids.</li>  
-                            </ul>  
-                            <p>  
-                              Resources:  
-                              <a href="https://utopia.fyi" target="_blank">Utopia.fyi</a> for fluid scaling,  
-                              <a href="https://every-layout.dev" target="_blank">Every-Layout.dev</a> for layout patterns.  
-                            </p>  
-                          
-                            <h3>Design Thinking Approaches</h3>  
-                            <h4>Analytical Thinking</h4>  
-                            <ul>  
-                              <li>Break systems into parts (e.g., chemistry or physics).</li>  
-                              <li>Focus on <em>zooming in</em> to understand components.</li>  
-                            </ul>  
-                          
-                            <h4>Systems Thinking</h4>  
-                            <ul>  
-                              <li>Study how parts interact holistically.</li>  
-                              <li>Focus on <em>zooming out</em> to see connections.</li>  
-                            </ul>  
-                          
-                            <h3>Web vs. Native Philosophy</h3>  
-                            <ul>  
-                              <li><strong>Web</strong>: Prioritize declarative design (HTML/CSS first).</li>  
-                              <li><strong>Native apps</strong>: Optimize for imperative control.</li>  
-                            </ul>  
-                            <p>  
-                              Essential read:  
-                              <a href="https://alistapart.com/article/dao/" target="_blank">A Dao of Web Design</a>,  
-                              which challenges assumptions about devices and users.  
-                            </p>  
-                          
-                            <p><em>The web thrives on flexibility. Like jazz, declarative design embraces improvisation—let the browser handle the details.</em></p>  
-                          </article>  
-                    </div>
-                </details>
+  <div class="container">
+    <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
 
-                <details open>
-                    <summary>
-                        <h2>Leerpunten</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Wat ik heb geleerd van Jeremy Keith’s lezing</h2>  
-                            <ul>  
-                                <li>  
-                                <strong>Declaratieve code is flexibeler</strong>: Ik laat HTML/CSS meer het werk doen,  
-                                omdat ze fouten negeren en zich aanpassen – minder micromanagen met JavaScript.  
-                                </li>  
-                                <li>  
-                                <strong>Jazz als inspiratie</strong>: Net zoals improvisatie in jazz, moet webdesign  
-                                ruimte bieden voor onverwachte scenario’s (gebruikers én browsers).  
-                                </li>  
-                                <li>  
-                                <strong>CSS is een suggestie</strong>: Geen pixel-perfecte controle nodig – tools  
-                                zoals <code>clamp()</code> laten de browser zelf slimme keuzes maken.  
-                                </li>  
-                                <li>  
-                                <strong>Systeemdenken</strong>: Niet alleen code-analyseren, maar ook kijken hoe  
-                                alles <em>samenwerkt</em> voor robuustere ontwerpen.  
-                                </li>  
-                                <li>  
-                                <strong>Het web is uniek</strong>: Geen native app-nabootsing – aanpasbaarheid  
-                                en veerkracht zijn juist krachten.  
-                                </li>  
-                            </ul>  
+    <article>
+      <section>
+        <img src="https://imgs.search.brave.com/Q27d5BcpfT_PNCHs-vFTxqaXomIKRsjSTePXMenNffU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9l/L2UwL0plcmVteV9L/ZWl0aF9pbl8yMDE5/LmpwZw" alt="jeremy keith portret" />
+        <div>
+        <h1>Weekly Nerd – Declarative Design door Jeremy Keith</h1>
+        <p>Een inspirerende lezing over het verschil tussen declaratief en imperatief programmeren, en waarom declaratief design zo krachtig is voor het web.</p>
+        <div class="star-rating" style="font-size:1.5em; color:#FFD700;">
+          &#9733; &#9733; &#9733; &#9733; <span style="color:#ccc">&#9733;</span>
+        </div>
+        </div>
+      </section>
 
-  <p>  
-    <strong>Mijn belangrijkste inzicht</strong>:  
-    Minder controle = betere toegankelijkheid. Ik ga vaker <code>clamp()</code>  
-    en <a href="https://utopia.fyi" target="_blank">Utopia.fyi</a> gebruiken! 
-  </p>  
-                    </div>
-                </details>
-            </section>
-        </article>
-    </div>
+      <section>
+        <details class="accordion" open>
+          <summary>
+            <h2>Declaratief versus Imperatief: Muziek als metafoor</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Jeremy Keith gebruikt muziek om het verschil uit te leggen:</p>
+            <ul>
+              <li><strong>One approach (klassiek):</strong> muziek wordt exact beschreven met noten en strikte instructies.</li>
+              <li><strong>Jazz approach:</strong> improvisatie, weinig instructies, vrijheid en spontaniteit.</li>
+            </ul>
+            <p>Dit vertaalt zich naar programmeren:</p>
+            <ul>
+              <li><strong>Imperatief programmeren:</strong> stap voor stap instructies geven, zoals in JavaScript. Veel controle en precisie.</li>
+              <li><strong>Declaratief programmeren:</strong> je beschrijft het gewenste resultaat, zonder elke stap te bepalen. HTML en CSS zijn voorbeelden hiervan.</li>
+            </ul>
+          </div>
+        </details>
 
+        <details class="accordion">
+          <summary>
+            <h2>Kenmerken van declaratieve talen</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li>HTML en CSS zijn fouttolerant: ze negeren fouten en blijven functioneren.</li>
+              <li>CSS-regels zijn suggesties voor de browser, geen harde voorwaarden.</li>
+              <li>JavaScript is imperatief en minder fouttolerant: het volgt strikte instructies.</li>
+              <li>Jeremy’s motto: <em>“JavaScript should only do what only JavaScript can do.”</em></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Praktische tools voor flexibele webdesigns</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Jeremy raadt het gebruik van CSS-functies aan die de browser ruimte geven om te rekenen:</p>
+            <ul>
+              <li><code>calc()</code></li>
+              <li><code>clamp(minimum, preferred, maximum)</code> – voor responsieve fontgroottes, bijvoorbeeld: <code>clamp(1rem, 0.5rem + 0.666vw, 1.5rem)</code></li>
+              <li><code>min()</code> en <code>max()</code></li>
+              <li><code>fit-content()</code>, <code>min-content()</code> en <code>max-content()</code></li>
+              <li><code>repeat()</code> en <code>minmax()</code> voor layouts</li>
+            </ul>
+            <p>Handige bronnen:</p>
+            <ul>
+              <li><a href="https://utopia.fyi" target="_blank" rel="noopener">utopia.fyi</a></li>
+              <li><a href="https://every-layout.dev" target="_blank" rel="noopener">every-layout.dev</a></li>
+              <li>Boek: CSS Layout</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Denken in systemen</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Jeremy legt ook het belang uit van twee manieren van denken:</p>
+            <ul>
+              <li><strong>Analytisch denken:</strong> inzoomen en dingen opbreken in onderdelen, zoals in chemie of fysica.</li>
+              <li><strong>Systeemdenken:</strong> uitzoomen en bekijken hoe onderdelen samenwerken binnen het geheel.</li>
+            </ul>
+            <p>Voor webdesign is systeemdenken essentieel: niet alleen kijken naar losse regels, maar begrijpen hoe alles samenwerkt om robuuste en flexibele ontwerpen te maken.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Belangrijkste leerpunten</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li><strong>Declaratieve code is flexibeler:</strong> HTML/CSS negeren fouten en passen zich aan, waardoor minder micromanagement nodig is.</li>
+              <li><strong>Jazz als inspiratie:</strong> ruimte laten voor improvisatie, onverwachte scenario’s door gebruikers en browsers.</li>
+              <li><strong>CSS is een suggestie:</strong> geen pixel-perfecte controle, met tools als <code>clamp()</code> laat je de browser slimme keuzes maken.</li>
+              <li><strong>Systeemdenken:</strong> kijk naar het geheel en niet alleen naar losse onderdelen.</li>
+              <li><strong>Het web is uniek:</strong> geen native app-nabootsing, juist flexibiliteit en veerkracht maken het sterk.</li>
+              <li><strong>Mijn inzicht:</strong> minder controle leidt tot betere toegankelijkheid; ik ga vaker <code>clamp()</code> en <a href="https://utopia.fyi" target="_blank" rel="noopener">utopia.fyi</a> gebruiken!</li>
+            </ul>
+          </div>
+        </details>
+
+      </section>
+    </article>
+  </div>
+
+  <script src="../script_blog.js"></script>
 </body>
 </html>

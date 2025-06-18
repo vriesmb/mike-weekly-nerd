@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../style_posts.css" />
+    <link rel="stylesheet" href="/style_blog.css" />
+    <title>Unwrapping web design – Nils Binder</title>
+</head>
+<body>
+    <header style="position:sticky; top:0; z-index:1000;">
+        <ul>
+            <li>
+                <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+                    <path
+                        class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+                        d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+                    />
+                </svg>
+            </li>
+            <li>
+                <a href="../index.html">Projecten</a>
+            </li>
+            <li>
+                <a style="text-decoration: underline;" href="">Nils Binder</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+        <article>
+            <section>
+                <img src="https://9elements.com/blog/author/nils-binder/OoJKHgfwFS-300.jpeg" alt="Nils Binder" />
+                <div>
+                    <h1>Unwrapping web design – Nils Binder</h1>
+                    <p>Een frisse kijk op wrappers en moderne CSS-technieken om content flexibel en mooi te centreren.</p>
+                    <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+                        &#9733; &#9733; &#9733; &#9733; &#9733;
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <details class="accordion">
+                    <summary>
+                        <h2>Wat zijn wrappers?</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Wrappers zorgen voor een maximale breedte, padding en centreren van content.
+                        <br /><br />
+                        Traditionele methodes gebruiken vaste <code>max-width</code> en <code>margin: auto;</code> met padding, maar dat kan beter:
+                        <ul>
+                            <li><code>width: min(100% - 3rem, 75rem);</code></li>
+                            <li><code>margin-inline: auto;</code> voor horizontale centrering</li>
+                        </ul>
+                        Nog geavanceerder is deze oplossing:
+                        <br />
+                        <code>margin-inline: max(1.5rem, ((100% - var(--wrapper-max, 75rem)) / 2));</code>
+                        <br />
+                        Dit biedt dynamische marges op basis van viewportbreedte, wat flexibeler en responsiever is dan standaard oplossingen.
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Inspiratie van dasruhrgebiet.de</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        De website <a href="https://dasruhrgebiet.de" target="_blank" rel="noopener noreferrer">dasruhrgebiet.de</a> laat zien hoe je een mooi, schoon en responsive ontwerp maakt met een offset kolomstructuur.
+                        <br /><br />
+                        Ze gebruiken onverwachte whitespace als een visueel element, bijna als kleuren, en breken met conventies door autopilot in tools als Figma uit te zetten.
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Reflectie</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+    Tijdens Pre-CSS Day werd het concept van wrappers opnieuw bekeken.
+    <br /><br />
+    Moderne CSS-technieken zoals <code>min()</code> en <code>margin-inline</code> bieden veel meer flexibiliteit dan de oude vaste marges en paddings.
+    <br /><br />
+    Ontwerpers worden aangemoedigd om buiten de standaard conventies te denken en whitespace bewust als design-element te gebruiken in plaats van alleen lege ruimte.
+    <br /><br />
+    Tools zoals Figma, ChatGPT en Tailwind kunnen de creativiteit beperken als ze te rigide worden ingezet, daarom is bewust ontwerp cruciaal.
+    <br /><br />
+    <strong>Mijn conclusie:</strong><br />
+    Moderne CSS zoals <code>min()</code> en <code>margin-inline</code> maken layouts flexibeler en beter passend. 
+    Bewust gebruik van whitespace zorgt voor rust en overzicht. 
+    Techniek en ruimte samen zorgen voor een betere gebruikerservaring.
+</div>
+                </details>
+            </section>
+        </article>
+    </div>
+
+    <script src="../script_blog.js"></script>
+</body>
+</html>

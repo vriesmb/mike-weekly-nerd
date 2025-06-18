@@ -1,87 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../style_posts.css" />
+  <link rel="stylesheet" href="/style_blog.css" />
+  <title>Weekly Nerd – GSAP Animaties door Cassie Evans</title>
 </head>
 <body>
-    <div class="container">
-        <article>
-            <header>
-                <img src="https://imgs.search.brave.com/xautqWCu1nxm2wmOzlP__jSuDWsDqmASXRtf4nDgivc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zbWFz/aGluZ2NvbmYuY29t/Ly5uZXRsaWZ5L2lt/YWdlcz91cmw9L2lt/YWdlcy9zcGVha2Vy/cy9jYXNzaWUtZXZh/bnMuanBnJnc9MjUw/Jmg9MjUwJmZpdD1j/b3ZlciZmbT1hdmlm" 
-                     alt="Design Principles">
-                <div>
-                    <h1>Beyond Tweening GSAP</h1>
-                    <p>Een verhaal door Cassie Evans van GSAP</p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 4/5</time>
-                </div>
-            </header>
+  <header style="position:sticky; top:0; z-index:1000;">
+    <ul>
+      <li>
+        <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+          <path
+            class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+            d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+          />
+        </svg>
+      </li>
+      <li>
+        <a href="../index.html">Projecten</a>
+      </li>
+      <li>
+        <a style="text-decoration: underline;" href="">Cassie Evans</a>
+      </li>
+    </ul>
+  </header>
 
-            <section>
-                <details>
-                    <summary>
-                        <h2>Notities</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <article>  
-                          
-                            Beyond Tweening - by Cassie Evans
-                            <br>
-                            Fully featured animation library.
-                            <br>
-                            Met css heb je geen tijdlijn met GSAP kun je die creëren.
-                            <br>
-                            GSAP = Animation Toolbox
-                            <br>
-                            cross browser responsive and friendly animations.
-                            <br>
-                            Performance optimised.
-                            <br>
-                            GSAP Utils
-                            <br>
-                            Utility library
-                            <br>
-                            Random calls
-                            <br>
-                            Utils.random()
-                            <br>
-                            GSAP Ease Visualizer
-                            <br>
-                            Scroll trigger within a scroll trigger
-                            <br>
-                            Horizontal scrolling
-                            <br>
-                            Container Animation in GSAP
-                        
-                          </article>  
-                    </div>
-                </details>
+  <div class="container">
+    <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+    <article>
+      <section>
+        <img src="https://imgs.search.brave.com/xautqWCu1nxm2wmOzlP__jSuDWsDqmASXRtf4nDgivc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zbWFz/aGluZ2NvbmYuY29t/Ly5uZXRsaWZ5L2lt/YWdlcz91cmw9L2lt/YWdlcy9zcGVha2Vy/cy9jYXNzaWUtZXZh/bnMuanBnJnc9MjUw/Jmg9MjUwJmZpdD1j/b3ZlciZmbT1hdmlm" alt="GSAP Logo" />
+        <div>
+          <h1>Weekly Nerd – GSAP Animaties door Cassie Evans</h1>
+          <p>Een verhelderende presentatie over de kracht van GSAP, de ultieme animatiebibliotheek die verder gaat dan standaard CSS-animaties.</p>
+          <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+          </div>
+        </div>
+      </section>
 
-                <details open>
-                    <summary>
-                        <h2>Persoonlijke opvatting</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Interessant en Vermakelijk</h2>  
-                            <ul>  
-                                <li>  
-                              Ze was enthousiast en vertelde vermakelijk over alle opties die GSAP heeft. Ze liet toffe filmpjes zien. Mocht ik ooit leuke aniamites willen maken dan kan dat met GSAP. Ook hebben ze tools gelanceerd om een betere easing cure te maken. Het toffe vind ik.. dat je echt alles kunt animeren. Het gaat van vectoren naar tekst en hele layouts.
-                                </li>  
-    
-                            </ul>  
-                    </div>
-                </details>
-            </section>
-        </article>
-    </div>
+      <section>
+        <details class="accordion" open>
+          <summary>
+            <h2>Wat is GSAP?</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>GSAP, oftewel GreenSock Animation Platform, is een krachtige animatiebibliotheek die veel verder gaat dan wat je met gewone CSS kunt doen. Waar CSS-animaties geen echte tijdlijnen bieden, maakt GSAP het mogelijk om complexe animaties met nauwkeurige timing te creëren.</p>
+            <p>Je zou GSAP kunnen zien als een complete <strong>Animation Toolbox</strong> die cross-browser werkt, responsief is en geoptimaliseerd voor performance.</p>
+          </div>
+        </details>
 
+        <details class="accordion">
+          <summary>
+            <h2>Belangrijke features & tools</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li><strong>GSAP Utils:</strong> een handige set tools, waaronder <code>Utils.random()</code> voor het maken van willekeurige animaties.</li>
+              <li><strong>Ease Visualizer:</strong> hiermee kun je animatie-easing curves visueel bewerken en optimaliseren.</li>
+              <li><strong>ScrollTrigger binnen ScrollTrigger:</strong> voor geavanceerde scrollgebaseerde animaties, ook horizontaal scrollen behoort tot de mogelijkheden.</li>
+              <li><strong>Container Animations:</strong> animaties waarbij een heel container-element geanimeerd wordt en inhoud meebeweegt.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Persoonlijke opvatting</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Ik vond de presentatie van Cassie Evans erg interessant en vermakelijk. Ze was enthousiast en nam ons mee in de vele opties die GSAP biedt, ondersteund door toffe demo-video’s.</p>
+            <p>Wat ik vooral gaaf vind, is dat je werkelijk <em>alles</em> kunt animeren: van vectoren en tekst tot complete layouts. Daarnaast zijn de nieuwe tools voor easing curves een mooie toevoeging om animaties vloeiender te maken.</p>
+            <p>Als ik ooit animaties wil maken die verder gaan dan wat CSS kan, weet ik dat GSAP een heel sterke optie is.</p>
+          </div>
+        </details>
+      </section>
+    </article>
+  </div>
+
+  <script src="../script_blog.js"></script>
 </body>
 </html>

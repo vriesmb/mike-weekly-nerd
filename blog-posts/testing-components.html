@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style_posts.css">
+    <link rel="stylesheet" href="/style_blog.css">
+    <title>Testen als een echte gebruiker – Clarke Verdel</title>
+</head>
+<body>
+    <header style="position:sticky; top:0; z-index:1000;">
+        <ul>
+            <li>
+                <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+                    <path
+                        class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+                        d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+                    />
+                </svg>
+            </li>
+            <li>
+                <a href="../index.html">Projecten</a>
+            </li>
+            <li>
+                <a style="text-decoration: underline;" href="">Steve Jonk</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+        <article>
+            <section>
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEJA0zMYr1QQg/profile-displayphoto-shrink_400_400/B4EZTVDv9fHUAk-/0/1738741318071?e=1755129600&v=beta&t=BNeUMkIeNjPtes4KjAllRDzEK9kv9WZoQGofcjKhRDo" alt="Component testing browser">
+                <div>
+                    <h1>Testen als een echte gebruiker – Clarke Verdel</h1>
+                    <p>Hoe bouw je componenten die écht betrouwbaar zijn? Clarke Verdel liet zien hoe hij dit doet bij Miele, waar hij werkt aan internationale e-commerce projecten als T-shaped engineer.</p>
+                    <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+                        &#9733; &#9733; &#9733; &#9733; <span style="color:#ccc">&#9733;</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <details class="accordion">
+                    <summary>
+                        <h2>Onderwerpen</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Clarke werkt aan MieleAutocomplete: een eigen design system met herbruikbare componenten. De uitdaging is om die componenten betrouwbaar te maken voor meerdere landen, browsers en gebruikers. Denk aan dark mode, performance, SEO en toegankelijkheid (A11y).
+                        <br><br>
+                        Hij werkt volgens de Testing Trophy van Kent C. Dodds: een piramide met de volgende lagen:
+                        <ul>
+                            <li>Static Tooling (linting, type checking)</li>
+                            <li>Unit Tests</li>
+                            <li>Integration Tests</li>
+                            <li>End-to-End (E2E) Tests</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Tools & Stack</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        <ul>
+                            <li>ESLint – Voor codekwaliteit</li>
+                            <li>TypeScript – Type checking</li>
+                            <li>Vitest – Unit & Component testing</li>
+                            <li>Jest – Voor snelle tests in synthetic DOM</li>
+                            <li>Cypress / Playwright – E2E tests in de browser</li>
+                        </ul>
+                        Clarke benadrukte dat browsergebaseerd testen (met bijvoorbeeld Playwright) visuele checks en debugging mogelijk maakt, maar ook trager is dan lokale tests.
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Voorbeelden & Uitleg</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Een component wordt eerst lokaal getest met unit- en component tests. Denk aan: werkt de knop correct? Rendeert de juiste tekst?
+                        <br><br>
+                        Daarna volgt integratie: werkt het geheel samen als verwacht? Bijvoorbeeld: klikken op een knop opent een modal met correcte data.
+                        <br><br>
+                        De zwaarste testvorm is E2E: deze bootst echte gebruikersinteractie na. De tests draaien in de browser en gebruiken echte data. Denk aan: een gebruiker logt in, zoekt een product en rekent af.
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Ideeën & Toepassing</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Clarke ziet browser testing steeds belangrijker worden. Dankzij tools als Vitest kun je tegenwoordig zelfs componenten direct in de browser testen, wat debugging vergemakkelijkt.
+                        <br><br>
+                        Ook het meenemen van accessibility checks in de browser is eenvoudiger: je ziet direct wat werkt en wat niet. Daardoor is de kans groter dat je écht bouwt wat de eindgebruiker nodig heeft.
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary>
+                        <h2>Reflectie</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                    </summary>
+                    <div class="content">
+                        Wat ik meeneem van Clarke’s verhaal is het belang van vertrouwen. Vertrouwen dat je code doet wat je denkt dat het doet – en dat krijg je alleen als je test vanuit het perspectief van de gebruiker.
+                        <br><br>
+                        Clarke liet zien dat E2E tests onmisbaar zijn voor de complexiteit van moderne webapplicaties. Zeker als je, net als bij Miele, te maken hebt met tientallen landen en duizenden gebruikersscenario’s.
+                        <br><br>
+                        Het deed me ook inzien dat een goede setup (met type checking, linters, en component testing) niet alleen bugs voorkomt, maar ook ontwikkelsnelheid verhoogt. Het is niet alleen veiliger bouwen, maar ook slimmer.
+                    </div>
+                </details>
+            </section>
+        </article>
+    </div>
+
+    <script src="../script_blog.js"></script>
+</body>
+</html>

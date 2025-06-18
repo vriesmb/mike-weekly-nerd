@@ -1,68 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../style_posts.css" />
+  <link rel="stylesheet" href="/style_blog.css" />
+  <title>Design Principles - CSS Café</title>
 </head>
 <body>
-    <div class="container">
-        <article>
-            <header>
-                <img src="https://imgs.search.brave.com/zCz7p_GiAmLJheHnh7DK95xUr1Zesl-euBByRESqfBY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGF5/LmVhcnRoL19uZXh0/L2ltYWdlP3VybD1o/dHRwczovL2Fzc2V0/cy5jbGF5LmVhcnRo/L2FwaS9pbWFnZXMv/YXZhdGFycy9vcHRp/bWl6ZWQvT1RjMk1U/YzRNQzB4TmpReU5U/SXdOek09Jnc9Mzg0/MCZxPTc1" 
-                     alt="Design Principles">
-                <div>
-                    <h1>CSS Café</h1>
-                    <p>Een verhaal door Sanne aan internationale developers</p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 4/5</time>
-                </div>
-            </header>
+  <header style="position:sticky; top:0; z-index:1000;">
+    <ul>
+      <li>
+        <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+          <path
+            class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+            d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+          />
+        </svg>
+      </li>
+      <li>
+        <a href="../index.html">Projecten</a>
+      </li>
+      <li>
+        <a style="text-decoration: underline;" href="">Sanne</a>
+      </li>
+    </ul>
+  </header>
 
-            <section>
-                <details>
-                    <summary>
-                        <h2>Notities</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <article>  
-                          Ik heb een aantal steekwoorden opgeslagen voor als ik de technieken zelf wil gaan proberen.
-                          Sanne had het over een hoop en liet ook heel veel zien. Hij deed indrukwekkende dingen. Vaak ook dingen waarvan ik dacht 'hoe gaan bedrijven dit in gebruik nemen'.
-                          <br><br>
-                          Een paar technieken heb ik opgeschreven a.d.v. zijn verhaal:
-                          <br>Css anchoring
-                          <br>Position-try-fallback: flip-blocks
-                          <br>
-                          <br>Sanne liet hier vlinder van de ene kolom naar de ander vliegen. Hoe hij dat precies deed snap ik nogsteeds niet, maar wel indrukwekkend.
-                          <br>Bottom: anchor(top);
-                          <br>Lef:anchor(left)
-                          <br>
-                          <br>Sibling-index
-                          <br>Anchor-scope:ghost;
-                          
-                        
-                          </article>  
-                    </div>
-                </details>
+  <div class="container">
+    <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+    <article>
+      <section>
+        <img src="https://imgs.search.brave.com/zCz7p_GiAmLJheHnh7DK95xUr1Zesl-euBByRESqfBY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGF5/LmVhcnRoL19uZXh0/L2ltYWdlP3VybD1o/dHRwczovL2Fzc2V0/cy5jbGF5LmVhcnRo/L2FwaS9pbWFnZXMv/YXZhdGFycy9vcHRp/bWl6ZWQvT1RjMk1U/YzRNQzB4TmpReU5U/SXdOek09Jnc9Mzg0/MCZxPTc1"
+             alt="Design Principles - CSS Café" />
+        <div>
+          <h1>Design Principles</h1>
+          <p>CSS Café<br />Een verhaal door Sanne aan internationale developers</p>
+          <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+            &#9733; &#9733; &#9733; &#9733; <span style="color:#ccc">&#9733;</span>
+          </div>
+        </div>
+      </section>
 
-                <details open>
-                    <summary>
-                        <h2>Persoonlijke opvatting</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Ik vond het super interessant maar ook even te lastig.</h2>  
-                        Mijn niveau is nog niet zo goed, maar ik ga denk ik wel proberen met css anchoring te werken in bijv. de hackathon. 
-                    </div>
-                </details>
-            </section>
-        </article>
-    </div>
+      <section>
+        <details class="accordion" open>
+          <summary>
+            <h2>Notities</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>
+              Ik heb een aantal steekwoorden opgeslagen voor als ik de technieken zelf wil gaan proberen. Sanne had het over een hoop en liet ook heel veel zien. Hij deed indrukwekkende dingen. Vaak ook dingen waarvan ik dacht 'hoe gaan bedrijven dit in gebruik nemen'.
+            </p>
+            <p>Een paar technieken heb ik opgeschreven a.d.v. zijn verhaal:</p>
+            <ul>
+              <li>Css anchoring</li>
+              <li>Position-try-fallback: flip-blocks</li>
+            </ul>
+            <p>
+              Sanne liet hier vlinder van de ene kolom naar de ander vliegen. Hoe hij dat precies deed snap ik nogsteeds niet, maar wel indrukwekkend.<br />
+              Bottom: anchor(top);<br />
+              Lef: anchor(left)
+            </p>
+            <ul>
+              <li>Sibling-index</li>
+              <li>Anchor-scope: ghost;</li>
+            </ul>
+          </div>
+        </details>
 
+        <details class="accordion">
+          <summary>
+            <h2>Persoonlijke opvatting</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>
+              Ik vond het super interessant maar ook even te lastig.<br />
+              Mijn niveau is nog niet zo goed, maar ik ga denk ik wel proberen met css anchoring te werken in bijv. de hackathon.
+            </p>
+          </div>
+        </details>
+      </section>
+    </article>
+  </div>
+
+  <script src="../script_blog.js"></script>
 </body>
 </html>
