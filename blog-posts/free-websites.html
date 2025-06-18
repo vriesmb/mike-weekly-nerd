@@ -1,60 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../style_posts.css" />
+  <link rel="stylesheet" href="/style_blog.css" />
+  <title>Waarom vinden wij dat websites gratis moeten zijn</title>
 </head>
 <body>
-    <div class="container">
-        <article>
-            <header>
-                <img src="https://imgs.search.brave.com/JQN5-Lc9x6aVpcUtIfoMb6tPgZqigsUP_zd-eg_9q7s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cXVpcmtzbW9kZS5v/cmcvYWJvdXQvcGl4/L3Bwa2ZvdG8uanBn" 
-                     alt="Design Principles">
-                <div>
-                    <h1>Free Websites</h1>
-                    <p>Een bizar en uiteenlopend verhaal door Peter Paul Koch over een nieuwe manier van internetten.</p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 3/5</time>
-                </div>
-            </header>
+  <header style="position:sticky; top:0; z-index:1000;">
+    <ul>
+      <li>
+        <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+          <path
+            class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+            d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+          />
+        </svg>
+      </li>
+      <li>
+        <a href="../index.html">Projecten</a>
+      </li>
+      <li>
+        <a style="text-decoration: underline;" href="">P.P. Koch</a>
+      </li>
+    </ul>
+  </header>
 
-            <section>
-                <details>
-                    <summary>
-                        <h2>Notities</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <article>  
-                           <h3>Waarom vinden vinden wij dat websites gratis moeten zijn? Kan het anders?</h3>
-                        <ul>
-                            <li>En ethousiaste man met een visie. Hij werkt met zijn team aan iets compleet nieuws. Er is nog een markt voor. Maar toch stoppen ze hier miljoenen in. Naast dat ik het een abitieus plan vind, kon ik er over het algemeen geen touw aan vastknopen.</li>
-                            <li>Ik heb er een nieuwe denkwijze/filosofie/perspectief bij. Hun werk zorgt voor een andere vorm van marketing > met als doel om informatie op website meer vanuit objectiviteit te maken/benadere/kunnen lezen. Minder geld/kapitalistisch gedreven. Idealiter wordt het een eerlijke online omgeving. Maar… haalbaarheid vind ik zelf een 0.1% van slagen.</li>
-                            <li>Tof initiatief. Sta ik er achter?.. Nee. Het creeert een extra stroom aan oplichters op het web. En ze gaan te veel uit van het goede v/d mens.</li>
-                        </ul>
-                          
-                          </article>  
-                    </div>
-                </details>
+  <div class="container">
+    <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+    <article>
+      <section>
+        <img src="https://imgs.search.brave.com/JQN5-Lc9x6aVpcUtIfoMb6tPgZqigsUP_zd-eg_9q7s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cXVpcmtzbW9kZS5v/cmcvYWJvdXQvcGl4/L3Bwa2ZvdG8uanBn"
+             alt="Kilian Valkhof" />
+        <div>
+          <h1>Pay the Web Forward</h1>
+          <p>Een reflectie op de hedendaagse manier waarop websites geld verdienen en een blik op een eerlijker alternatief. Een kritische kijk op advertenties, het kapitalisme op het web en eerlijkere alternatieven.</p>
+          <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+            &#9733; &#9733; <span style="color:#ccc">&#9733;</span><span style="color:#ccc">&#9733;</span><span style="color:#ccc">&#9733;</span>
+          </div>
+        </div>
+      </section>
 
-                <details open>
-                    <summary>
-                        <h2>Persoonlijke opvatting</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Ik vond het super interessant maar ook even te lastig.</h2>  
-                        Mijn niveau is nog niet zo goed, maar ik ga denk ik wel proberen met css anchoring te werken in bijv. de hackathon. 
-                    </div>
-                </details>
-            </section>
-        </article>
-    </div>
+      <section>
+        <details class="accordion" open>
+          <summary>
+            <h2>Onze overdenkingen</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li>Kon er geen touw aan vastknopen.</li>
+              <li>We hebben er een nieuw perspectief bij: websites kunnen ook benaderd worden als objectieve informatiebronnen, los van commerciële motieven.</li>
+              <li>Het opent een andere vorm van marketing – minder kapitalistisch en meer idealistisch.</li>
+              <li>Idealiter creëren we een eerlijkere online omgeving waarin informatie vrij toegankelijk is.</li>
+              <li>Maar... de haalbaarheid? Lijkt op dit moment 0% realistisch.</li>
+            </ul>
+          </div>
+        </details>
 
+        <details class="accordion">
+          <summary>
+            <h2>Peter-Paul Koch – Pay the Web Forward</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>In <strong>“Pay the Web Forward”</strong> pleit Peter-Paul Koch voor een alternatief verdienmodel op het web: <em>Web Monetization</em>.</p>
+            <p>Hij legt uit dat het huidige systeem — waarbij websites 'gratis' zijn en gefinancierd worden via advertenties — is ontstaan uit slechte keuzes en gewoonten in de jaren '90. Het gevolg: websites vol clickbait, in plaats van kwalitatieve content.</p>
+            <p><strong>Web Monetization draait het om:</strong> gebruikers kunnen vrijwillig betalen aan sites die ze écht waarderen, gebaseerd op hoe lang ze er blijven. Dit stimuleert inhoud met waarde, niet met sensatie.</p>
+            <p>Hoe werkt het?</p>
+            <ul>
+              <li>Je hebt een wallet nodig (bijv. via <a href="https://coil.com" target="_blank">Coil</a>).</li>
+              <li>Een browserextensie activeert betalingen naar deelnemende sites.</li>
+              <li>Jij bepaalt hoeveel je per maand besteedt.</li>
+            </ul>
+            <p>Zo’n systeem zou het web eerlijker, duurzamer en menselijker kunnen maken.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Reflectie</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>De manier waarop websites gefinancierd worden, bepaalt vaak hoe ze gebouwd worden — en voor wie.</p>
+            <p>Door te streven naar alternatieven zoals Web Monetization, of simpelweg door bewust te kiezen voor openheid en toegankelijkheid, kunnen we als makers een ander signaal afgeven.</p>
+            <p><em>Misschien is “gratis” niet écht gratis als het wordt betaald met onze aandacht en privacy.</em></p>
+          </div>
+        </details>
+      </section>
+    </article>
+  </div>
+
+  <script src="../script_blog.js"></script>
 </body>
 </html>

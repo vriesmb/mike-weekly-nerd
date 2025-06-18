@@ -1,83 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../style_posts.css" />
+  <link rel="stylesheet" href="/style_blog.css" />
+  <title>Geld verdienen met Project Fugu – Niels Leenheer</title>
 </head>
 <body>
-    <div class="container">
-        <article>
-            <header>
-                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGn0gCnP0nV7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698590642613?e=1752105600&v=beta&t=Yt2NaWZE0KRx3XuDLdkf2xMhABcZda0h0ta2NxLd4nM" 
-                     alt="Design Principles">
-                <div>
-                    <h1>Geld verdienen met project FUGU</h1>
-                    <p>Een verhaal door Niels Leenheer over zijn software succesverhaal en zijn liefde voor printers.</p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 3/5</time>
-                </div>
-            </header>
+  <header style="position:sticky; top:0; z-index:1000;">
+    <ul>
+      <li>
+        <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+          <path
+            class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+            d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+          />
+        </svg>
+      </li>
+      <li>
+        <a href="../index.html">Projecten</a>
+      </li>
+      <li>
+        <a style="text-decoration: underline;" href="">Niels</a>
+      </li>
+    </ul>
+  </header>
 
-            <section>
-                <details>
-                    <summary>
-                        <h2>Notities</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <article>  
-                            Oprichter van Salonhub.
+  <div class="container">
+    <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+    <article>
+      <section>
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGn0gCnP0nV7Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698590642613?e=1752105600&v=beta&t=Yt2NaWZE0KRx3XuDLdkf2xMhABcZda0h0ta2NxLd4nM"
+             alt="Bonprinter en kassasysteem" />
+        <div>
+          <h1>Geld verdienen met Project Fugu</h1>
+          <p>Hoe Niels Leenheer een compleet kassasysteem bouwde met alleen webtechnologie – speciaal voor kappers en salons. Zonder native apps, mét bonprinter.</p>
+          <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+            &#9733; &#9733; &#9733; <span style="color:#ccc">&#9733;&#9733;</span>
+          </div>
+        </div>
+      </section>
 
-                          <ul>
-                            <li>
-                                online afspraaksysteem     
-                            </li>
-                            <li>
-                                bonnenprinter
-                                <br>
-                                - usb hebben interfaces <br>
-                                - printer heeft 1 interface<br>
-                                - printer en scanner 2 interfaces<br>
-                                - eigen interface heeft eigen endpoint<br>
-                                - ascii alle print opties: currencies, letters, cijfers<br>
-                                - pinter(taal) heeft geen simpele tags.<br>
-                            </li>
-                            <li>
-                                Internationalisatie van Unicode<br>
-                                - cp858 Westers Europese standaard - genoeg (vreemde) karakters<br>
-                                - cp1125 iets van russisch<br>
-                                - zijn er heel veel soorten van<br>
-                            </li>
-                            <li>
-                                Etkinson algoritm
-                                - Dither methode om logo’s print-ready te maken
-                            </li>
-                          </ul> 
-                         
-                    
-                          </article>  
-                    </div>
-                </details>
+      <section>
+        <details class="accordion">
+          <summary>
+            <h2>Wat is Salonhub?</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Salonhub is een online platform speciaal voor kapperszaken, waarmee klanten afspraken kunnen boeken én waarmee salons hun betalingen en bonnen kunnen afhandelen. Het hele systeem draait in de browser als een Progressive Web App (PWA).</p>
+          </div>
+        </details>
 
-                <details open>
-                    <summary>
-                        <h2>Persoonlijke opvatting</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Leuk verhaal, niet heel nuttig</h2>  
-                       Leuk om naar deze ondernemende software ontwikkelaar te luisteren. Enthousiaste man met een passie voor zijn bedrijf, zijn software-oplossing en printers.
-                       Ik zelf heb er niet veel aan gehad maar was leuk om naar te luisteren.
-                    </div>
-                </details>
-            </section>
-        </article>
-    </div>
+        <details class="accordion">
+          <summary>
+            <h2>Waarom Project Fugu?</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Project Fugu is een initiatief van Google waarmee PWA’s toegang krijgen tot hardware zoals USB-apparaten. Voor Salonhub betekende dit: direct vanuit de browser kunnen praten met bonnenprinters, klantendisplays en barcodescanners – zonder native software.</p>
+          </div>
+        </details>
 
+        <details class="accordion">
+          <summary>
+            <h2>Technische uitdagingen</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li>Bonnenprinters hebben vaak meerdere interfaces (USB, Serial), en elk vereist een apart endpoint</li>
+              <li>ASCII printopties werken met speciale karakters voor valuta, letters, logo’s</li>
+              <li>Geen simpele "HTML print" – er zijn geen tags, alles moet met commando's</li>
+              <li>Unicode ondersteuning vereist keuze uit character sets (zoals CP858 voor West-Europa, of CP1125 voor Russisch)</li>
+              <li>Logo’s print-ready maken vereist een dithering-algoritme – Niels gebruikt het Atkinson-algoritme</li>
+            </ul>
+            <img style="width: 100%;" src="../images/f16_pb.png" alt="ascii types">
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Eigen JavaScript-libraries</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Om alle hardware aan te sturen schreef Niels eigen tools:</p>
+            <ul>
+              <li><strong>EscPosEncoder</strong>: om ESC/POS commando’s voor printers te genereren</li>
+              <li><strong>WebSerialCustomerDisplay</strong>: om klantendisplays te bedienen via WebSerial</li>
+            </ul>
+            <p>Dankzij deze tools is Salonhub volledig zelfstandig in het aansturen van apparaten via de browser.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Internationale ondersteuning</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Om in meerdere talen en regio’s te werken, houdt Salonhub rekening met Unicode-sets:</p>
+            <ul>
+              <li><strong>CP858</strong>: voor West-Europese tekens</li>
+              <li><strong>CP1125</strong>: voor Russische markten</li>
+              <li>Er zijn tientallen codepages – elk model vereist specifieke instellingen</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Boodschap van Niels</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Waar ik vroeger apps bouwde in native frameworks, draait alles nu in de browser. Dankzij moderne API’s zoals WebUSB en WebSerial is dat ook écht mogelijk geworden. Het voelt als een kleine revolutie in hoe we software bouwen.</p>
+            <p>Het mooiste is: een klein team (of zelfs één developer) kan nu een compleet kassasysteem bouwen zonder dure licenties of native installaties.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Reflectie</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Ik kon er eergelijk gezegd niet zelf heel veel uit halen. Wat mooi was om te zien.. is dat Niels super enthousiast verteld over zijn passie en onderwerp. Hij gaf nog een stukje geschiedenis dat ik wel interessant vond, maar er zijn nou niet echt dingen die ik in de toekomst anders ga doen door zijn verhaal.</p>
+          </div>
+        </details>
+      </section>
+    </article>
+  </div>
+
+  <script src="../script_blog.js"></script>
 </body>
 </html>

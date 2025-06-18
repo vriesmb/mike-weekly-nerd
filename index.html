@@ -8,18 +8,16 @@
         <title>Blog Mike</title>
     </head>
     <body>
-    <header>
+    <header style="position:sticky; top:0; z-index:1000;">
             <ul>
                 <li>
-                    <a href="./index.html">Over Mij</a>
-                </li>
-                <li>
                     <svg
-          id="uuid-f0a64028-a567-4292-8056-7e521c252d9b"
-          data-name="M_2"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 732.60867 471.28245"
-        >
+                onclick="toggleTheme()"
+                id="uuid-f0a64028-a567-4292-8056-7e521c252d9b"
+                data-name="M_2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 732.60867 471.28245"
+            >
           <g id="uuid-3534b2df-002c-4174-8204-d40556edd33a" data-name="M_1">
             <path
               class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
@@ -29,7 +27,10 @@
         </svg>
                 </li>
                 <li>
-                    <a href="./blog.html">Projecten</a>
+                    <a href="./blog-posts/meesterproef.html">Meesterproef</a>
+                </li>
+                <li>
+                    <a style="text-decoration: underline;" href="./blog.html">Projecten</a>
                 </li>
             </ul>
     </header>
@@ -41,18 +42,18 @@
             </article>
         </section>
 
-        <section class="card-container" data-blog-item="hackers-united">
+        <section class="card-container" data-blog-item="hackers-united" >
             <img src="https://imgs.search.brave.com/-5jC9P8tfjXeg_XgfvayuM6dwksfhbOFb4er0FXB6LQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9hcmR1aW5vLWNv/bnRyb2wtYnJvYWQt/ZWxlbWVudC1hc3Nl/bWJseS1ieS1odW1h/bl80MTQ2Ni02Nzgu/anBnP3NlbXQ9YWlz/X2h5YnJpZCZ3PTc0/MA" 
                      alt="Design Principle" 
                      class="card-image">
             <article class="card-content">
-                <h2 class="card-title">Hackers United</h2>
-                <p class="card-subtitle">Een verhaal door ... over ...</p>
-                <button class="card-button" onclick="navigateToPost(this)">
+                <h2 class="card-title c1">Hackers United</h2>
+                <p class="card-description">Een apart verhaal over hacken</p>
+                <button class="card-button" onclick="navigateToPost(this)" data-target="/blog-posts/hackers-united.html">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -64,12 +65,12 @@
                      class="card-image">
             <article class="card-content">
                 <h2 class="card-title">Declarative Design</h2>
-                <p class="card-subtitle">Een verhaal door Jeremy Keith over design principes en technieken.</p>
+                <p class="card-description">Een verhaal door Jeremy Keith over design principes en technieken.</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -81,12 +82,12 @@
                      class="card-image">
             <article class="card-content">
                 <h2 class="card-title">Beyond Tweening GSAP</h2>
-                <p class="card-subtitle">Een verhaal door Cassie Evans over mogelijkheden en technieken binnen en rondom de library GSAP.</p>
+                <p class="card-description">Een verhaal door Cassie Evans over mogelijkheden en technieken binnen en rondom de library GSAP.</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -98,12 +99,12 @@
                      class="card-image">
             <article class="card-content">
                 <h2 class="card-title">Extra: CSS Café</h2>
-                <p class="card-subtitle">Een verhaal door Sanne over design css technieken.</p>
+                <p class="card-description">Een verhaal door Sanne over design css technieken.</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -114,13 +115,13 @@
                      alt="Design Principle" 
                      class="card-image">
             <article class="card-content">  
-                <h2 class="card-title">Free Websites</h2>
-                <p class="card-subtitle">Een verhaal door Peter Paul Koch over een nieuwe manier van internetten.</p>
+                <h2 class="card-title">Pay the Web Forward</h2>
+                <p class="card-description">Een kritische kijk op advertenties, het kapitalisme op het web en eerlijkere alternatieven.</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -132,12 +133,12 @@
                      class="card-image">
             <article class="card-content">
                 <h2 class="card-title">Stop using JS for that</h2>
-                <p class="card-subtitle">Een verhaal door Kilian over technische principes en hierarchie van codetalen.</p>
+                <p class="card-description">Een verhaal door Kilian over technische principes en hierarchie van codetalen.</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -149,12 +150,12 @@
                      class="card-image">
             <article class="card-content">
                 <h2 class="card-title">Geld verdienen met project FUGU</h2>
-                <p class="card-subtitle">Een verhaal door Niels Leenheer over zijn software succesverhaal en zijn liefde voor printers.</p>
+                <p class="card-description">Een verhaal door Niels Leenheer over zijn software succesverhaal en zijn liefde voor printers.</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -166,12 +167,12 @@
                      class="card-image">
             <article class="card-content">
                 <h2 class="card-title">Importance of Accessibility</h2>
-                <p class="card-subtitle">Een verhaal door Nienke over haar ervaring en onderzoek naar de toegankelijkheid van de OV GVB app.</p>
+                <p class="card-description">Een verhaal door Nienke over haar ervaring en onderzoek naar de toegankelijkheid van de OV GVB app.</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -183,16 +184,146 @@
                      class="card-image">
             <article class="card-content">
                 <h2 class="card-title">Practical Fixes for common WCAG Failures</h2>
-                <p class="card-subtitle">Een verhaal door Erik Kroes over design principes en veel gemaakt fouten en hoe op te lossen of te voorkomen a.d.v wat tips.</p>
+                <p class="card-description">Een verhaal door Erik Kroes over design principes en veel gemaakt fouten en hoe op te lossen of te voorkomen a.d.v wat tips.</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Lees Verhaal
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
         </section>
+
+        <section class="card-container" data-blog-item="rise-of-ai">
+    <img src="https://www.davebitter.com/img/talks/remix-party.jpg" 
+         alt="The rise of AI-powered Voice Interfaces on the web" 
+         class="card-image">
+    <article class="card-content">
+        <h2 class="card-title">The rise of AI-powered Voice Interfaces on the web</h2>
+        <p class="card-description">
+            Een verhaal door Dave Bitter over hoe praten met AI niet alleen mogelijk is, maar ook gewoon vet goed werkt. Hij bouwde zelf een webapplicatie die live meeluistert en de spraak omzet in tekst.
+        </p>
+        <button class="card-button" onclick="navigateToPost(this)">
+            Lees Verhaal
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </article>
+</section>
+
+       <section class="card-container" data-blog-item="twitter-bot">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKOj6Ill2zfpb1mtEzC1_eXbI5EctOxdQcA&s" 
+         alt="Twitter follow bot illustratie" 
+         class="card-image">
+    <article class="card-content">
+        <h2 class="card-title">Twitter Follow Bot & Follower Scraper</h2>
+        <p class="card-description">
+            Een project van Steve Jonk over het bouwen van een geautomatiseerde bot die Twitter-gebruikers volgt en analyseert – en dat alles ondanks de vele obstakels van het platform.
+        </p>
+        <button class="card-button" onclick="navigateToPost(this)">
+            Lees Verhaal
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </article>
+</section>
+
+        <section class="card-container" data-blog-item="testing-components">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQEJA0zMYr1QQg/profile-displayphoto-shrink_400_400/B4EZTVDv9fHUAk-/0/1738741318071?e=1755129600&v=beta&t=BNeUMkIeNjPtes4KjAllRDzEK9kv9WZoQGofcjKhRDo" 
+                alt="Clarke Verdel" 
+                class="card-image">
+            <article class="card-content">
+                <h2 class="card-title">How do you automate testing your components like a real user</h2>
+                <p class="card-description">Clarke Verdel werkt aan de e-commerce oplossingen van Miele en deelt hoe je écht vertrouwen krijgt in je componenten met de Testing Trophy, van linting tot E2E tests.</p>
+                <button class="card-button" onclick="navigateToPost(this)">
+                Lees Verhaal
+                <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </button>
+            </article>
+        </section>
+
+        <section class="card-container" data-blog-item="q42">
+            <img src="https://redactie.rtl.nl/sites/default/files/content/images/2015/11/19/Q42_0.jpg?itok=ENPTamM_&width=512&height=288&impolicy=semi_dynamic" 
+                alt="Johan Huijkman & Marvin Sernee – Q42" 
+                class="card-image">
+            <article class="card-content">
+                <h2 class="card-title">Q42 – Johan & Marvin</h2>
+                <p class="card-description">Toegankelijkheid als standaard: hoe Q42 digitale producten maakt die écht voor iedereen werken.</p>
+                <button class="card-button" onclick="navigateToPost(this)">
+                    Lees Verhaal
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </article>
+        </section>
+
+
+
+        <section class="card-container" data-blog-item="digitale-toegankelijkheid">
+  <img src="https://media.licdn.com/dms/image/v2/D4E03AQHSR35GAGzD1g/profile-displayphoto-shrink_200_200/B4EZZ9BSLqHoAY-/0/1745854211358?e=1755734400&v=beta&t=pRtelwyr_RuSCWRl1-D-wm_P0sdOIiM0O3ht5j2XlKw" 
+       alt="Marieke de Hoop" 
+       class="card-image">
+  <article class="card-content">
+    <h2 class="card-title">Digitaal Toegankelijkheid – Marieke de Hoop</h2>
+    <p class="card-description">Toegankelijkheid is geen niche: 1 op de 3 Nederlanders heeft een beperking. Marieke laat zien waarom toegankelijkheid essentieel is voor iedereen.</p>
+    <button class="card-button" onclick="navigateToPost(this)">
+      Lees Verhaal
+      <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </article>
+</section>
+
+
+       <section class="card-container" data-blog-item="unwrapping-web-design">
+    <img src="https://9elements.com/blog/author/nils-binder/OoJKHgfwFS-300.jpeg" 
+         alt="Design Principle" 
+         class="card-image">
+    <article class="card-content">
+        <h2 class="card-title">Unwrapping web design</h2>
+        <p class="card-description">Een verhaal door Nils Binder over moderne wrappers en CSS-technieken die webdesign fris en flexibel maken.</p>
+        <button class="card-button" onclick="navigateToPost(this)">
+            Lees Verhaal
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </article>
+</section>
+
+
+    <section class="card-container" data-blog-item="tech-political">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5GYm8vQa1Ed6QWhUEzXWPpxwp-eWvyf4qVFZygJ6Pt6g9yVWG" 
+            alt="Design Principle" 
+            class="card-image">
+        <article class="card-content">
+            <h2 class="card-title">Tech continues to be political</h2>
+            <p class="card-description">
+            Miriam Suzanne legt uit waarom webdesign nooit statisch is, en waarom we gebruikers altijd de controle moeten geven over hun ervaring.
+            </p>
+            <button class="card-button" onclick="navigateToPost(this)">
+            Lees Verhaal
+            <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+        </article>
+    </section>
+
     </section>
 
 
@@ -204,19 +335,18 @@
             </article>
         </section>
 
-
-        <section class="card-container" data-blog-item="hackathon">
-            <img src="./images/mario.png" 
+        <section class="card-container" data-blog-item="meesterproef">
+            <img src="./images/nexus.png" 
                      alt="Design Principle" 
                      class="card-image">
             <article class="card-content">
-                <h2 class="card-title">Hackathon</h2>
-                <p class="card-subtitle">Kom meer te weten over het meesterwerk van een Mario type selector screen</p>
+                <h2 class="card-title">Meesterproef</h2>
+                <p class="card-description">Mijn proces en ervaring met mijn meesterproef project genaamd: Nexus CMD</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Bekijk
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
@@ -228,16 +358,35 @@
                      class="card-image">
             <article class="card-content">
                 <h2 class="card-title">Leerdoelen Meesterproef</h2>
-                <p class="card-subtitle">Mijn persoonlijke leerdoelen voor het laatste project</p>
+                <p class="card-description">Mijn persoonlijke leerdoelen voor het laatste project</p>
                 <button class="card-button" onclick="navigateToPost(this)">
                     Bekijk
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.5 10.5L10.5 3.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M3.5 3.5H10.5V10.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
                 </article>
         </section>
+
+         <section class="card-container" data-blog-item="reflectie-vakken-minor">
+            <img src="https://blackhillsfamily.com/wp-content/uploads/2020/12/shutterstock_1157343685-1024x683.jpg" 
+                     alt="Design Principle" 
+                     class="card-image">
+            <article class="card-content">
+                <h2 class="card-title">Reflectie Vakken & Minor</h2>
+                <p class="card-description">Mijn persoonlijke kijk op de afgelopen periode</p>
+                <button class="card-button" onclick="navigateToPost(this)">
+                    Bekijk
+                    <svg width="12" height="12" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 10.5L10.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 3.5H10.5V10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                </article>
+        </section>
+
+        
     </section>
 
         <script src="script_blog.js"></script>

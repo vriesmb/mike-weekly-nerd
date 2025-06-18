@@ -1,212 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../style_posts.css" />
+  <link rel="stylesheet" href="/style_blog.css" />
+  <title>Stop using JS for that – Kilian Valkhof</title>
 </head>
 <body>
-    <div class="container">
-        <article>
-            <header>
-                <img src="https://imgs.search.brave.com/VMhr2yXSSA1OqzHDsuXlkvBujdUuXx5jcf0O8-rpqGI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9raWxp/YW52YWxraG9mLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMva2ls/aWFuLWxhcmdlcGhv/dG8tNzY5eDEwMjQu/anBn" 
-                     alt="Design Principles">
-                <div>
-                    <h1>Stop using JS for that</h1>
-                    <p>Een verhaal door Kilian Valkhof over technische principes en hierarchie van codetalen.</p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 4/5</time>
-                </div>
-            </header>
+  <header style="position:sticky; top:0; z-index:1000;">
+    <ul>
+      <li>
+        <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+          <path
+            class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+            d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+          />
+        </svg>
+      </li>
+      <li>
+        <a href="../index.html">Projecten</a>
+      </li>
+      <li>
+        <a style="text-decoration: underline;" href="">Kilian</a>
+      </li>
+    </ul>
+  </header>
 
-            <section>
-                <details>
-                    <summary>
-                        <h2>Notities</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <article>  
-                           <h3>[Stop using JS for that - Kilian]</h3>
+  <div class="container">
+    <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+    <article>
+      <section>
+        <img src="https://imgs.search.brave.com/VMhr2yXSSA1OqzHDsuXlkvBujdUuXx5jcf0O8-rpqGI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9raWxp/YW52YWxraG9mLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMva2ls/aWFuLWxhcmdlcGhv/dG8tNzY5eDEwMjQu/anBn"
+             alt="Kilian Valkhof" />
+        <div>
+          <h1>Stop using JS for that</h1>
+          <p>In deze talk laat Kilian Valkhof zien dat we véél te vaak grijpen naar JavaScript, terwijl HTML en CSS tegenwoordig zélf de klus klaren. Slimmer, sneller én toegankelijker.</p>
+          <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+            &#9733; &#9733; &#9733; &#9733; <span style="color:#ccc">&#9733;</span>
+          </div>
+        </div>
+      </section>
 
-                            <ul>
-                                <li>
-                                    Electron framework voor software maken.
+      <section>
+        <details class="accordion" open>
+          <summary>
+            <h2>Progressive Enhancement first</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Kilian benadrukt het belang van de <strong>Rule of Least Power</strong>: kies altijd de minst krachtige taal die voldoet. Dus HTML boven CSS, CSS boven JS. Hierdoor wordt je site robuuster, sneller en toegankelijker.</p>
+            <p>Alles op het web werkt altijd – of zou dat moeten. En als iets niet werkt, moet de basis blijven functioneren (progressive enhancement).</p>
+          </div>
+        </details>
 
-                                    Polypane browser voor developers.
-                                    
-                                    [educcation.github.com](http://educcation.github.com/)
-                                </li>
-                                <li>
-                                    JSX />
-                                    Rule of least power
-                                    Choose the least powerful language  suitable for a given purpose
-                                </li>
-                                <li>
-                                    Er zijn altijd meerdere methodes voor functionaliteiten niet maar 1 versie.
-                                    Alles op het web werkt altijd.
-                                </li>
-                                <li>
-                                    Custom switches
-                                    Browser doet ook wat werk. Clicks registreert hij van hele labels om een checkbox heen.
-                                </li>
-                                <li>
-                                    :checked pseudo selector + ::before (transform translate x (1rem)) voor animatietje.
-                                    Appearance none = eigen styling dmv ::before en ::after
-                                    :focus '&' :focus-visible
-                                </li>
-                                <li>
-                                    ruleset zijn de hele css conditions binnen de kringelhaken {}.
-                           
-                                    input type ="color”. geeft colorpicker UI
-                                </li>
-                                <li>
-                                    **In-page transitions**
-                           
-                                    Scroll-behavior: smooth;
-                                </li>
-                                <li>
-                                    **Accessibility**
-                                    @media.   prefers-reduced-motion: no-preference
-                                </li>
-                                <li>
-                                    Progressive enhancement
-                                    <br>
-                                    #my-traget for scroll
-                                    Scroll-margin-top 100px
-                                    <br>
-                                    #my-target:target{
-                                    outline
-                                    transition ease
-                                    } voor een highlight van target
-                                </li>
-                                <li>
-                                    **Accordions and modals**
-                                    <br>
-                                    Details *open*> (open voor eerste openhebben staan good default - live attribute browser dynamisch toevoegen en weghalen als je klikt)
-                                    <br>
-                                    summary (standaard zichtbaar)
-                                    <br>
-                                    p (complete info)
-                                    <br>
-                                    details />
-                                    <br>
-                                    Marker element in accordion
-                                    summary::marker{
-                                    fontsize
-                                    content :’’;
-                                    [open] summary::marker
-                                    <br>
-                                    Summary is clickable
-                                    Summary heeft een :hover nodig want krijgt geen ander cursor anders
-                                    kan met cursor:pointer
-                                    of styling change
-                                    gebruiker moet je melden is interactief
-                                </li>
-                                <li>
-                                    **Dialog / Popup**
-                           
-                                    Dialog>
-                                    
-                                    form method”dialog”
-                                    
-                                    h1
-                                    
-                                    button type”submit” close		(want een modal sluit niet zelf, moet aangestuurd worden)
-                                    
-                                    /form
-                                    
-                                    /dialog
-                                    
-                                    moet je tripleren met button onclick “dialog.showModal
-                                    
-                                    geeft je popup / dialog
-                                    Dialog komt op top layer zit niet meer in pagina.
-                                </li>
-                                <li>
-                                    **Backdrop** is complete ruimte achter je dialog/popup
-                           
-                                    dialog:backdrop{}
-                                    
-                                    dialog{
-                                    
-                                    opacity 1
-                                    
-                                    transform scale1
-                                    
-                                    transition all 1s ease
-                                    
-                                    @starting-style{
-                                    opacity: 0;
-                                    transform: scale(0.8);
-                                    }
-                                    }
-                                </li>
-                                <li>
-                                    **Parent Selector**
-                           
-                                    :has()
-                                    
-                                    wil .. stylen alleen als er een .. in zit
-                                    
-                                    form:has(#other:checked) #other-text {
-                                    … }
-                                    
-                                    input, textarea {
-                                    field-sizing: content;
-                                    } field wordt net zo groot als input content
-                                </li>
-                                <li>
-                                    **Select element**
-                           
-                                    Select>
-                                    
-                                    option>
-                                    
-                                    option>
-                                    
-                                    /Select>
-                                    
-                                    select,
-                                    
-                                    ::picker(select) {
-                                    
-                                    appearance: base-text; (ik bepaal styling)
-                                    
-                                    }
-                                </li>
-                                <li>
-                                    **Scroll driven animations**
-                           
-                                     https://scroll-driven-animations.style/demos/cover-flow/css
-                                </li>
-                                
-                            </ul>
-                           
-                           
-    
-                          
-                          </article>  
-                    </div>
-                </details>
+        <details class="accordion">
+          <summary>
+            <h2>Custom UI zonder JavaScript</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Je kunt tegenwoordig complete interactieve elementen maken met enkel HTML en CSS:</p>
+            <ul>
+              <li><code>&lt;details&gt;</code> en <code>&lt;summary&gt;</code> voor accordeons</li>
+              <li><code>&lt;dialog&gt;</code> + <code>.showModal()</code> voor popups</li>
+              <li><code>:checked</code> pseudo-selector + <code>::before</code> voor switches</li>
+              <li><code>&lt;input type="color"&gt;</code> voor een ingebouwde colorpicker</li>
+              <li><code>:has()</code> als parent selector om dynamisch te stylen</li>
+            </ul>
+            <p>Je hoeft dus niet alles in JavaScript te bouwen – browsers doen tegenwoordig veel werk zelf.</p>
+          </div>
+        </details>
 
-                <details open>
-                    <summary>
-                        <h2>Persoonlijke opvatting</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Een van de interessantste Weekly nerds</h2>  
-                        Een ontzettend logisch verhaal van kilian. Het heeft er ook echt voor gezorgd dat ik bij BT al ging nadenken van hoe ga ik het in de basis goedmaken, progressive enhancen, experimenten.. maar niet ten koste van de basis en de main code. Dit stukje wijsheid zal me in de toekomst altijd bijblijven.
-                    </div>
-                </details>
-            </section>
-        </article>
-    </div>
+        <details class="accordion">
+          <summary>
+            <h2>Toegankelijkheid en animaties</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Met media queries als <code>@media (prefers-reduced-motion: no-preference)</code> kun je motion toegankelijk maken. Ook kun je elementen laten oplichten bij navigatie met <code>:target</code> en <code>scroll-margin-top</code> gebruiken voor betere focusposities.</p>
+            <p>Focus styling zoals <code>:focus</code> en <code>:focus-visible</code> is essentieel voor keyboardgebruikers.</p>
+          </div>
+        </details>
 
+        <details class="accordion">
+          <summary>
+            <h2>Scroll driven animations</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Met nieuwe CSS-technieken zoals <a href="https://scroll-driven-animations.style/demos/cover-flow/css" target="_blank">scroll-driven animations</a> kun je geavanceerde animaties maken die reageren op scrollgedrag – zónder JS.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Tools van Kilian zelf</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <ul>
+              <li><strong>Polypane</strong>: een browser speciaal voor developers, met preview van meerdere schermgroottes tegelijk</li>
+              <li><a href="https://educcation.github.io" target="_blank">Educcation.github.io</a>: leer CSS, HTML en webstandaarden in kleine interactieve lessen</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="accordion">
+  <summary>
+    <h2>Reflectie</h2>
+    <span class="dropdown-icon">
+      <span class="bar bar1"></span>
+      <span class="bar bar2"></span>
+    </span>
+  </summary>
+  <div class="content">
+    <p>Er zijn altijd meerdere manieren om een feature te bouwen. JavaScript is krachtig, maar dat betekent niet dat je het overal voor hoeft in te zetten. Door eerst te kijken wat je met HTML en CSS kunt bereiken, houd je je site sneller, toegankelijker en beter te onderhouden.</p>
+    <p><em>Gebruik JavaScript bewust en alleen als het echt iets toevoegt.</em></p>
+    <p>Sta af en toe stil bij je keuzes: wat heb je écht nodig? Welke oplossing is het meest toekomstbestendig? Een bewuste aanpak levert vaak simpelere, elegantere code op – en daar plukken jij én je gebruikers de vruchten van.</p>
+  </div>
+</details>
+      </section>
+    </article>
+  </div>
+
+  <script src="../script_blog.js"></script>
 </body>
 </html>

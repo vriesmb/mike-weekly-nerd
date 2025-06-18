@@ -1,100 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../style_posts.css" />
+  <link rel="stylesheet" href="/style_blog.css" />
+  <title>IDEA11Y - Practical Fixes for WCAG Failures – Erik Kroes</title>
 </head>
 <body>
-    <div class="container">
-        <article>
-            <header>
-                <img src="https://imgs.search.brave.com/AOQ0UDHchh1JvDwclFG2wpTGJwC0ma5NIynzVC4R2dI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmNkdC5ubC92b3Jp/Z2UtZWRpdGllcy9m/aWxlcy9pbWFnZXMv/c3ByZWtlcnMvZXJp/ay1rcm9lcy5qcGc" 
-                     alt="Design Principles">
-                <div>
-                    <h1>Practical Fixes for common WCAG Failures</h1>
-                    <p>en verhaal door Erik Kroes over design principes en veel gemaakt fouten en hoe op te lossen of te voorkomen a.d.v wat tips.</p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 4/5</time>
-                </div>
-            </header>
+  <header style="position:sticky; top:0; z-index:1000;">
+    <ul>
+      <li>
+        <svg onclick="toggleTheme()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 732.60867 471.28245">
+          <path
+            class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+            d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+          />
+        </svg>
+      </li>
+      <li>
+        <a href="../index.html">Projecten</a>
+      </li>
+      <li>
+        <a style="text-decoration: underline;" href="">Erik Kroes</a>
+      </li>
+    </ul>
+  </header>
 
-            <section>
-                <details>
-                    <summary>
-                        <h2>Notities</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        
-                            <h2>Practical Fixes for common WCAG Failures</h2>
-                            
-                            <h2>What is accessibility</h2>
-                            <ul>
-                              <li>Accessible product is a product thats usable by everybody, including people with disabilities</li>
-                              <li>Accessibility doesnt mean it's great.. it's just technically useable.</li>
-                            </ul>
-                          
-                            <h2>Keyboard testing</h2>
-                            <ul>
-                              <li>Pressing Tab - should take you to every interactive element, in an intuitive order, on the website</li>
-                              <li>Most common keyboard issues:</li>
-                              <li>No skip links (you want to be able to skip the menu)</li>
-                              <li>Uncontrolled focus state (visible confirmation - see where you are)</li>
-                              <li>&lt;div role="button"&gt; - works with mouse, not with keyboard  should use right HTML elements</li>
-                              <li>Visible label is better than a placeholder. The moment you need it the most, it disappears.</li>
-                            </ul>
-                          
-                            <h2>Contrast rules/tips</h2>
-                            <ul>
-                              <li>Contrast helps everybody. When your screen is sunny, you can still see the contrast difference</li>
-                              <li>UI elements: minimum 3:1 contrast ratio</li>
-                              <li>Large text (24px/19px bold): minimum 3:1</li>
-                              <li>All other text: minimum 4.5:1</li>
-                              <li>Most common issues:</li>
-                              <li>Placeholders - text too low in contrast</li>
-                              <li>Branding colors prioritized over accessibility</li>
-                            </ul>
-                          
-                            <h2>Alternatives</h2>
-                            <ul>
-                              <li>Offer captions in videos</li>
-                              <li>Offer transcript for podcasts</li>
-                              <li>Images: use alt text (decorative images need no alternative)</li>
-                              <li>Most common issues:</li>
-                              <li>Image in buttons or links</li>
-                              <li>Video content without alternatives</li>
-                            </ul>
-                          
-                            <h2>Sizing</h2>
-                            <ul>
-                              <li>Compare mobile, tablet and desktop - no screen size is the same</li>
-                              <li>Most common issues:</li>
-                              <li>Design not made for 320px</li>
-                              <li>External content (cookie notice, videos, popups) breaking accessibility</li>
-                              <li>Resource: <a href="https://www.solidstart.info">https://www.solidstart.info</a></li>
-                            </ul>
-                          
-                    </div>
-                </details>
+  <div class="container">
+    <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
+    <article>
+      <section>
+        <img src="https://imgs.search.brave.com/AOQ0UDHchh1JvDwclFG2wpTGJwC0ma5NIynzVC4R2dI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bmNkdC5ubC92b3Jp/Z2UtZWRpdGllcy9m/aWxlcy9pbWFnZXMv/c3ByZWtlcnMvZXJp/ay1rcm9lcy5qcGc" alt="Erik Kroes" />
+        <div>
+          <h1>IDEA11Y - Practical Fixes for common WCAG Failures</h1>
+          <p>Erik Kroes neemt je mee in praktische tips voor toegankelijke producten die echt werken voor iedereen, inclusief mensen met een beperking.</p>
+          <div class="star-rating" style="font-size:1.5em; color: #FFD700;">
+            &#9733; &#9733; &#9733; &#9733; <span style="color:#ccc">&#9733;</span>
+          </div>
+        </div>
+      </section>
 
-                <details open>
-                    <summary>
-                        <h2>Persoonlijke opvatting</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
-                    </summary>
-                    <div>
-                        <h2>Voordehandliggend maar duidelijk</h2>  
-                        We doen al jaren bij CMD de juiste en nieuwste design principe volgen. Om die reden dat ik het eigenlijk allemaal vanzelfsprekend maar ook interessant vond. Hij gaf mooie praktische voorbeelden bij zijn principes en vertelde ook dos en donts. Voor in de toekomst altijd handig. Toegankelijkheid moet de nieuwe standaard worden en en stapje in die richitng kom je door de principes uit deze speech te pakken.
-                    </div>
-                </details>
-            </section>
-        </article>
-    </div>
+      <section>
+        <details class="accordion">
+          <summary>
+            <h2>Wat is toegankelijkheid?</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            Een toegankelijk product is bruikbaar voor iedereen, inclusief mensen met een beperking. Toegankelijkheid betekent niet dat een product geweldig is, maar dat het technisch bruikbaar is.
+          </div>
+        </details>
 
+        <details class="accordion">
+          <summary>
+            <h2>Keyboard Testing</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Door op Tab te drukken moet je logisch en intuïtief door alle interactieve elementen kunnen navigeren.</p>
+            <strong>Veelvoorkomende problemen:</strong>
+            <ul>
+              <li>Geen skip links om het menu te kunnen overslaan</li>
+              <li>Ongecontroleerde focusstatussen – je moet altijd kunnen zien waar je bent</li>
+              <li>Gebruik van <code>&lt;div role="button"&gt;</code> werkt met muis maar niet met toetsenbord; gebruik de juiste HTML-elementen</li>
+            </ul>
+            Ook is een zichtbaar label beter dan een placeholder, omdat die bij invoer vaak verdwijnt wanneer je hem het hardst nodig hebt.
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Contrastregels & tips</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Contrast helpt iedereen, bijvoorbeeld bij fel zonlicht. Het wordt online nog onvoldoende toegepast.</p>
+            <ul>
+              <li>UI-elementen moeten minimaal 3:1 contrast ratio hebben</li>
+              <li>Grote tekst (minimaal 24px of 19px vetgedrukt) minimaal 3:1</li>
+              <li>Alle overige tekst minimaal 4.5:1</li>
+            </ul>
+            Veelvoorkomende issues:
+            <ul>
+              <li>Placeholders met te weinig contrast</li>
+              <li>Brandingkleuren krijgen teveel prioriteit, toegankelijkheid moet voorop staan</li>
+              <li>Staatindicaties (hover, focus, active) onvoldoende zichtbaar</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Alternatieven en testen</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Bied ondertitels bij video’s, transcripties bij podcasts en alt-teksten bij afbeeldingen aan. Decoratieve afbeeldingen hebben geen alternatief nodig. Alt-teksten moeten het doel van de afbeelding duidelijk maken.</p>
+            <p>Veelvoorkomende problemen zijn afbeeldingen in knoppen of links en video-inhoud zonder ondertiteling.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Sizing en responsive design</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Vergelijk mobiel, tablet en desktop – geen enkele schermgrootte is gelijk.</p>
+            <p>Veelvoorkomende problemen zijn ontwerpen die niet werken op 320px breedte en externe content (cookie banners, video’s, pop-ups) die toegankelijkheid kunnen verstoren.</p>
+          </div>
+        </details>
+
+        <details class="accordion">
+          <summary>
+            <h2>Persoonlijke reflectie</h2>
+            <span class="dropdown-icon">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+            </span>
+          </summary>
+          <div class="content">
+            <p>Dit sprak me erg aan omdat het veelvoorkomende problemen en praktische oplossingen benoemt. Bij CMD volgen we al jaren de nieuwste designprincipes, maar het blijft goed om deze praktische dos & donts helder te krijgen.</p>
+            <p>Toegankelijkheid moet de standaard worden. Deze principes helpen daarbij een stap te zetten in de juiste richting.</p>
+          </div>
+        </details>
+      </section>
+    </article>
+  </div>
+
+  <script src="../script_blog.js"></script>
 </body>
 </html>

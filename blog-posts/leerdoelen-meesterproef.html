@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style_posts.css">
-    <title>Apple-style Blog Post</title>
+    <link rel="stylesheet" href="/style_blog.css">
+    <title>Leerdoelen Meesterproef</title>
 </head>
 <body>
+       <header style="position:sticky; top:0; z-index:1000;">
+            <ul>
+                <li>
+                    <svg
+                onclick="toggleTheme()"
+                id="uuid-f0a64028-a567-4292-8056-7e521c252d9b"
+                data-name="M_2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 732.60867 471.28245"
+            >
+          <g id="uuid-3534b2df-002c-4174-8204-d40556edd33a" data-name="M_1">
+            <path
+              class="uuid-4c2a497a-272b-4684-b5b1-2d8b57efef39"
+              d="m732.60867,210.77515v260.50723h-99.05794V207.26062c-.70461-59.63066-48.88362-107.79357-108.51449-108.47824-60.76087-.50724-110.47101,50.72462-110.47101,111.44928v261.01451h-99.13044V207.98531c-.50638-59.67475-48.58967-108.0155-108.26087-108.84057-60.90579-.5797-110.72464,50.72462-110.72464,111.63045v260.50727H0V207.26069C0,92.76794,92.75362.19547,207.24637.19547c63.51448,0,120.28986,28.73189,158.33335,73.65942C406.48612,25.41414,467.24012-1.74177,530.61596.08676c112.9348,3.26088,201.92029,97.71741,201.92029,210.68842"
+            />
+          </g>
+        </svg>
+                </li>
+                <li>
+                    <a href="../index.html">Projecten</a>
+                </li>
+                <li>
+                    <a style="text-decoration: underline;" href="">Leerdoelen</a>
+                </li>
+            </ul>
+    </header>
+
     <div class="container">
+        <div class="back_navigation"><a href="javascript:history.back()">← Terug</a></div>
         <article>
-            <header>
+            <section>
                 <img src="https://imgs.search.brave.com/GZQE9OvUOjWciayBGlb8XRPYWIMT48IN_MXdlR7LFgI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS81/ZTBmMTE0NDkzMGE4/YmM4YWFjZTUyNmMv/NjYwMTA4MGNiMWU3/OGY4ZDE5NDg4OWU0/XzY2MDBkMzRjZjg1/MWMzODBmZWZiZmU5/ZC1hMjIxYjJkNWFl/ZDlkYzgwZjE5YTRj/MWFjYWI4ZTkyZC5q/cGVn" 
                      alt="Design Principles">
                 <div>
@@ -17,42 +46,47 @@
                     <p>Mijn persoonlijke leerdoelen voor het laatste project
 
                     </p>
-                    <time datetime="2025-08-15">Weekly nerd van ... datum · 4/5</time>
+                    <!-- <time datetime="2025-08-15">Weekly nerd van ... datum · 4/5</time> -->
                 </div>
-            </header>
+            </section>
 
             <section>
-                <details open>
+                <details class="accordion">
                     <summary>
                         <h2>Leerdoelen</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                       
                     </summary>
-                    <div>
+                    <div class="content">
                         <h2>Transition</h2>  
                         <ul>  
-                            <li>Ik wil vanuit de basis van een project de layout en structuur robuust opmaken zodat de website niet op het laatste moment nog pixel perfect gemaakt hoeft te worden, denk hierbij aan nette responsiveness, consistent sizing etc.. Ik ben tevreden als de componenten op de website netjes zijn opgemaakt. Responsive, herbruikbaar en variabel ingesteld indien toepasselijk.</li>
-                            <li>Ik ben in staat nette applicaties te ontwerpen maar ik wil nu gebruikers een prettige saemless (UX) ervaring geven op de applicatie. Dit wil ik gaan doen door de gebruiker echt aan te geven, aan de hand van micro-interacties en animaties, wat er gebeurd op de website.</li>
-                            <li>ik wil goed worden in georganiseerd code schrijven om het door te kunnen pasen aan anderen developers. Ik ben tevreden als mijn code duidelijk leesbaar is in de logica of stijling maar ook a.d.v. comments en een goede structurele hierarchie indien toepasselijk. </li>
+                            <li>Ik wil in de eerste fase van mijn project een robuuste frontend architectuur opzetten, waarbij alle componenten modulair, consistent en responsive zijn opgebouwd, zodat ik in de laatste fase meer tijd heb voor interactieve details zoals animaties en UX.</li>
+                            <li>Ik wil uiterlijk vóór de laatste feedback sessie met Ronald een gebruikerservaring creëren die doelgericht en prettig aanvoelt, door micro-interacties en animaties toe te passen die de gebruiker direct visuele feedback geven tijdens acties.</li>
+                            <li>Ik wil mijn code zodanig gestructureerd en gedocumenteerd schrijven, dat andere developers deze eenvoudig kunnen begrijpen, testen en aanvullen via GitHub (pull requests, comments en branches). </li>
+                            <li>Ik wil tijdens het ontwerpen en ontwikkelen van de applicatie voortdurend onderbouwen waarom bepaalde keuzes worden gemaakt (design reasoning), en zorgen dat componenten dynamisch en herbruikbaar zijn opgebouwd terwijl ik het proces bijhoud en plan met tooling om samen te kunnen testen, reviewen voor het beste eindresultaat.</li>
                         </ul> 
                     </div>
                 </details>
 
-                <details open>
-                    <summary>
-                        <h2>Persoonlijke reflectie 2/3</h2>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 6v12M6 12h12"/>
-                        </svg>
+                <details class="accordion">
+                     <summary>
+                        <h2>Persoonlijk reflectie 2/3</h2>
+                        <span class="dropdown-icon">
+                            <span class="bar bar1"></span>
+                            <span class="bar bar2"></span>
+                        </span>
+                       
                     </summary>
-                    <div>
+                    <div class="content">
                         Ik heb gemerkt dat ik aan het begin van elk project erg moet inkomen. Elk vak is continu een enorme switch in denkwijze. Het is vaak lastig om ideeen meteen uit te werken.. en dat knaagt wel. Verder ben ik eigenlijk altijd super trots op het eindresultaat, maar de weg er naar toe is wel oneindig. Ik heb veel verschillende technieken geprobeerd qua APIs heb ik zelfs met speech gewerkt, in css met een soort 3D illusie, heb met API content gewerkt (en dat is nog maar een klein deel). Allemaal dingen die ik aan het begin nog niet kon en waarvan ik ook niet wist dat het mogelijk was.
                     </div>
                 </details>
             </section>
         </article>
     </div>
-
+<script src="../script_blog.js"></script>
 </body>
 </html>
